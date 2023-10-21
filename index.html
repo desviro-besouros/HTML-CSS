@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Loja Virtual</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="info-usuario">
+                <p>
+                    <strong class="nome">Mariana Veloso</strong><br>
+                <small>Último login em: 07/10/2023 às 10h55</small>
+                </p>
+            </div>
+            <nav class="navegacao-menu">
+                <ul>
+                    <li class="icone-inicio">
+                        <a href="#">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <strong>Início</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#clientes">Nossos clientes</a></li>
+                    <li>
+                        <a href="#pedidos">Pedidos</a></li>
+                    <li>
+                        <a href="#faleconosco">Fale conosco</a></li>            
+                </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <section id="produtos">
+                <div class="nova-colecao">
+                    <h1>Nova Coleção 2023</h1>
+                    <h2>Ganhe <strong>10%</strong> off na 1ª compra</h2>
+                </div>
+                
+                <ol class="lista-imagens">
+                    <li>
+                        <figure>
+                            <img src="img/1.jpg" alt="mulher negra de cabelos lisos e longos sorrindo de blazer e lenço laranja na cabeça"></figure></li>
+                    <li>
+                        <figure>
+                            <img src="img/2.jpg" alt="mulher negra de cabelo raspado sorrindo de roupa branca"></figure></li>
+                    <li>
+                        <figure>
+                            <img src="img/3.jpg" alt="mulher negra de cabelo longo cacheado sentada no chão com a mão no cabelo"></figure></li>
+                    <li>
+                        <figure>
+                            <img src="img/4.jpg" alt="mulher parda de cabelo grande cacheado com as pernas abertas e as mãos nos joelhos"></figure></li>
+                </ol>
+                <div class="linkcea">
+                    <a href="https://www.cea.com.br/" target="_blank">Clique aqui para conferir</a>
+                </div>
+                </section>
+            
+            <section id="clientes">
+                <h3>Nossos clientes</h3>
+                <div class="avaliacoes">
+                    <article>
+                        <h4>Beyoncé da Silva</h4>
+                        <h5><i>Avaliado em 06/10/2023</i></h5>
+                        <p class="paragrafo-clientes"> Entrega super rápida.<br/>
+                            Produtos de extrema qualidade.<br/>
+                            Amei meu novo look!<br/>
+                            Recomendo demais!
+                        </p>
+                    </article>
+                    
+                    <article>
+                        <h4>Valentina Morena</h4>
+                        <h5><i>Avaliado em 06/10/2023</i></h5>
+                        <p class="paragrafo-clientes">Comprei para minha esposa<br/>
+                            e ela simplesmente adorou.<br/>
+                            Ganhei pontos com a cremosa. <br/>
+                            Comprarei mais vezes!
+                        </p>
+                         
+                    </article>
+                    
+                    <article>
+                        <h4>Érika Hilton</h4>
+                        <h5><i>Avaliado em 06/10/2023</i></h5>
+                        <p class="paragrafo-clientes">Quero vestir tudo dessa loja!<br/>
+                            Looks maravilhosos sempre!<br/>
+                            Luxo, poder e sedução em qualquer ocasião!<br/>
+                            Recomendadíssima!
+                        </p>                         
+                    </article>
+                </div>
+            </section>
+
+            <section id="pedidos">
+                <h3>Meus pedidos</h3>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Valor (R$)</th>
+                            <th>Quantidade</th>
+                            <th>Data da compra</th>                   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Blusa</td>
+                            <td>20,00</td>
+                            <td>1</td>
+                            <td>01/10/2023</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Vestido</td>
+                            <td>50,00</td>
+                            <td>1</td>
+                            <td>01/10/2023</td>        
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sapato preto</td>
+                            <td>100,00</td>
+                            <td>1</td>
+                            <td>01/10/2023</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Anel</td>
+                            <td>10,00</td>
+                            <td>1</td>
+                            <td>01/10/2023</td>
+                        </tr>
+                    </tbody>    
+                </table>
+            </section>
+
+            <section id="faleconosco">
+                <h3>
+                    Fale conosco
+                </h3>
+                
+                <form>
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Digite seu nome" required="required"/>
+                                
+                    </div>
+
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="email" placeholder="Digite seu e-mail"/>
+                    </div>
+
+                    <div>
+                        <label>Mensagem:</label>
+                        <textarea cols="30" rows="10" placeholder="Digite uma mensagem para nós"></textarea>
+                    </div>
+                    
+                    <div class="enviar">
+                        <button type="submit">Enviar</button>    
+                    </div>
+
+                    </form>
+            </section>
+        </main> 
+        
+        <footer>
+            <p class="rodape">
+                &copy; Copyright | 2023 | Todos os direitos reservados
+            </p>
+        </footer>
+    </body>
+</html>
+        
